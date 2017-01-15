@@ -1,3 +1,4 @@
+# counts the number of inversions in an array
 # complexity : O(nlogn)
 
 def mergesort(a)
@@ -9,11 +10,19 @@ end
 def merge(left, right)
   subarray = []
   until left.length == 0 || right.length == 0
-    subarray << (left.first <= right.first ? left.shift : right.shift)
+    if left.first <= right.first
+      subarray << left.shift
+    else
+      subarray << right.shift
+      $inversions += left.length
+    end
   end
   subarray + left + right
 end
 
 
 a = *ARGV.map(&:to_i)
-puts mergesort(a)
+$inversions = 0
+mergesort(a)
+puts $inversions
+
