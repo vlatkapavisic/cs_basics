@@ -3,7 +3,7 @@
 def mergesort(a)
   return a if a.length == 1
   middle = a.length/2
-  return merge(mergesort(a[0...middle]), mergesort(a[middle..-1]))
+  merge(mergesort(a[0...middle]), mergesort(a[middle..-1]))
 end
 
 def merge(left, right)
