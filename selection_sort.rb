@@ -1,3 +1,5 @@
+# running time : O(n^2)
+
 class Array
   def selection_sort
     n = self.length - 1
