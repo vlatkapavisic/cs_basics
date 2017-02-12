@@ -1,4 +1,4 @@
-# running time : O(nlong)
+# running time : O(nlogn)
 # worst case : unbalanced partitions ; running time : O(n^2)
 # improvement : choose pivot randomly (or as a median of 3 or 5 randomly chosen elements)
 

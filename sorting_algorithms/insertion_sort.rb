@@ -16,4 +16,3 @@ end
 
 a = *ARGV.map(&:to_i)
 puts a.insertion_sort
-

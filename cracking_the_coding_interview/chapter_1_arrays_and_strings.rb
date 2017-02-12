@@ -23,6 +23,13 @@ class String
     self.length == s.length && self.concat(self).include?(s)
   end
 
+  # check if a string is a palindrome recursively
+  def palindrome?
+    return true if self.length <= 1
+    return false if self[0] != self[-1]
+    self[1..-2].palindrome?
+  end
+
 end
 
 # Write code to reverse a C-Style String
