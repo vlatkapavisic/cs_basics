@@ -36,3 +36,4 @@ favourite_cities.add_edge('Paris', 'New York')
 favourite_cities.add_edge('Paris', 'Marrakech')
 
 cities.first.adjacent_nodes # returns NY and Marrakech nodes
+
